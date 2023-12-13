@@ -6,39 +6,66 @@
     <link rel="icon" type="imge/svg" sizes="32x32" href="./img/Logo.svg">
     <title>Starbucks</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="./js/main.js"></script>
 </head>
 <body>
-
     <header>
         <nav class="contenedorNav">
             <h2 class="textOrange"><img src="./img/Logo.svg" alt=""></h2>
-            <div class="menuNav">
-                <ul>
-                    <li>
-                        <a href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu</a>
-                    </li>
-                    <li>
-                        <a href="#">Novedades</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <button class="navTrigger " id="navTrigger">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
+                <nav class="navMenu" id="navMenu">
+                    <ul>
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Novedades</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </nav>
     </header>
     <main class="contenedorMain">
         <section>
-            <div class="contenedorPrincipal">
+            <div class="contenedorPrincipal" id="contenedorPrincipal">
                 <div class="infoPrincipal">
-                    <h1 class="textOrange">Green Latte Helado</h1>
-                    <p class="textWhite">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis amet similique debitis. Rerum quasi, est nulla ullam molestiae earum magnam?</p>
+                    <div>
+                        <h1 class="textOrange">Green Latte Helado</h1>
+                        <p class="textWhite">Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash. Top it off with sweetened whipped cream and mocha drizzle for a real party in your mouth.</p>
+                    </div>
                 </div>
                 <div class="imgPrincipal">
-                    <img src="./img/img1.png" alt="">
+                    <div class="imgStart" id="imgStart">
+                        <div class="imgOne" id="imgOne">
+                            <img src="./img/img1.png" id="pantalla" width="400px" height="580px" alt="">
+                        </div>
+                        <div class="imgTwo">
+                            <img src="img/Facebook.svg" alt="">
+                            <img src="img/Instagram.svg" alt="">
+                            <img src="img/Twitter.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorSecundario">
+                <div class="subContenedorSec">
+                    <img id="img1" src="img/thumb1.png" alt="">
+                    <img id="img2" src="img/thumb2.png" alt="">
+                    <img id="img3" src="img/thumb3.png" alt="">
                 </div>
             </div>
         </section>
